@@ -1,12 +1,16 @@
-# Getting Started with Create React App
+# React Props Lesson 
+This project demonstrates how to pass props to child and destructing props in child
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](./screenshot.png)
 
 ## Available Scripts
+To run project
 
-In the project directory, you can run:
+```bash
+npm start
+```
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run build and deploy to firebase
+```bash
+npm deploy
+```
