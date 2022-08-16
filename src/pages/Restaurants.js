@@ -19,7 +19,7 @@ const Restaurants = () => {
 
   return (
     <div className='container'>
-      <h1>Jons Restaurants</h1>
+      <h1>Restaurants around BC</h1>
       {/* <button onClick={() => getData()}>Get restaurants</button> */}
       {allRestaurants.map(single => {
         // console.log(single)
