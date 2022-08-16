@@ -7,11 +7,14 @@ const Restaurants = () => {
   const [allRestaurants, setAllRestaurants] = useState([])
 
   useEffect(() => {
-    const getData = () => {
-      fetch('https://bocacode-intranet-api.web.app/restaurants')
-        .then(raw => raw.json())
-        .then(data => setAllRestaurants(data))
-        .catch(err => console.error(err))
+    const getData = async () => {
+      const raw = await fetch('https://bocacode-intranet-api.web.app/restaurants')
+      const data = await raw.json()
+      setAllRestaurants(data)
+      
+      // .then(raw => raw.json())
+      // .then(data => setAllRestaurants(data))
+      // .catch(err => console.error(err))
     }
 
     getData()
